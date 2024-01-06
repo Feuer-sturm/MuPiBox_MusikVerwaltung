@@ -14,6 +14,7 @@ Mit diesem Skript kann die Musikverwaltung für die MuPiBox in einer Excel Datei
 ## data.json aus dem Excel Dokument generieren
 - Excel Dokument und Pythonskript im selben Ordner ablegen
 - Musik für die MuPiBox im Excel Dokument verwalten und speichern
+- Wenn Excel Datei umbenannt wird, muss der Dateiname hier im Skript geändert werden: https://github.com/Feuer-sturm/MuPiBox_MusikVerwaltung/blob/515d3d6e02c7477e89f033842d04a717e37a0b9b/MuPiBox-MusikVerwaltung-xlsx2json.py#L5
 - Python Skript ausführen (z.B. in VSCode im Terminal mit dem Befehl ```py .\MuPiBox-MusikVerwaltung-xlsx2json.py```)
 - data.json wird generiert
 - data.json z.B. via FTP auf die Mupibox kopieren
