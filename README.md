@@ -36,5 +36,6 @@ damit die lokale Musik wieder zur internen `data.json` hinzugefügt wird
 ## Änderungshistorie
 v1.0 (2024-01-05)
 - Initiale Version
+
 v1.1 (2024-01-07)
 - json2xlsx Converter hinzugefügt
