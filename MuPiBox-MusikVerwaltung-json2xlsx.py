@@ -2,7 +2,7 @@ import json
 from openpyxl import Workbook
 
 INPUTFILE = 'data.json'
-OUTPUTFILE = 'MuPiBox_MusikVerwaltung_Template_generated.xlsx'
+OUTPUTFILE = 'MuPiBox_MusikVerwaltung_Template.xlsx'
 
 documentation = [
     'x = Eintrag wird in data.json hinzugefügt',
