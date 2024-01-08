@@ -34,7 +34,7 @@ aus der Excel Tabelle die aktualisierte `data.json` Datei generieren, die dann w
 
 ## data.json via FTP vom Mac auf die MuPiBox übertragen
 - Terminal öffnen
-- in das Verzeichning wechseln, in dem `data.json` liegt (normalerweise im root Verzeichnis von diesem repo)
+- in das Verzeichnis wechseln, in dem `data.json` liegt (normalerweise im root Verzeichnis von diesem repo)
 - `ftp mupibox` auf dem Terminal ausführen und die Logindaten für den FTP Server eingeben (siehe https://mupibox.de/anleitungen/einstellungen/schnellzugriff-passwoerter/)
 - `put data.json` auf dem Terminal ausführen, um `data.json` auf die MuPiBox zu kopieren
 - den FTP Client mit `quit` beenden
