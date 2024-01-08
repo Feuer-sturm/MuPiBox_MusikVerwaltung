@@ -31,6 +31,13 @@ aus der Excel Tabelle die aktualisierte `data.json` Datei generieren, die dann w
 - SSH Verbindung zur Mupibox aufbauen und die `data.json` an den korrekten Zielort kopieren: ```cp /home/dietpi/MuPiBox/data.json /home/dietpi/.mupibox/Sonos-Kids-Controller-master/server/config/data.json```
 - Auf der MuPiBox Oberfläche zwischen Musik/Hörbuch/Radio wechseln, so dass die `data.json` neu geladen wird. Notfalls die MuPiBox einmal neustarten.
 
+## How to transfer files via FTP on a Mac
+- open a terminal
+- switch to the folder where `data.json` is stored (usually the root folder of this repo)
+- run `ftp mupibox` and enter the credentials (see https://mupibox.de/anleitungen/einstellungen/schnellzugriff-passwoerter/)
+- run `put data.json`
+- The file is transferred to the File Exchange folder of the MuPiBox
+
 ## Änderungshistorie
 v1.0 (2024-01-05)
 - Initiale Version
