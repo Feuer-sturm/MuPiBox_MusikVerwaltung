@@ -30,6 +30,7 @@ aus der Excel Tabelle die aktualisierte `data.json` Datei generieren, die dann w
 - `data.json` via FTP oder Samba auf die Mupibox kopieren
 - SSH Verbindung zur Mupibox aufbauen und die `data.json` an den korrekten Zielort kopieren: ```cp /home/dietpi/MuPiBox/data.json /home/dietpi/.mupibox/Sonos-Kids-Controller-master/server/config/data.json```
 - Auf der MuPiBox Oberfläche zwischen Musik/Hörbuch/Radio wechseln, so dass die `data.json` neu geladen wird. Notfalls die MuPiBox einmal neustarten.
+- Wenn ihr noch lokale Musik auf der Mupibox habt, dann müsst über die MuPiBox Admin Seite -> Reiter Admin -> Menü "Music database" das "Clean and update music database" noch einmal anstoßen, damit die lokale Musik wieder zur internen data.json hinzugefügt wird
 
 ## How to transfer files via FTP on a Mac
 - open a terminal
