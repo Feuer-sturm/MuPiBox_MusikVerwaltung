@@ -2,9 +2,10 @@ import json
 from openpyxl import load_workbook
 from openpyxl.utils import get_column_letter
 
-FILEPATH = 'MuPiBox_MusikVerwaltung_Template.xlsx'
+INPUTFILE = 'MuPiBox_MusikVerwaltung_Template.xlsx'
+OUTPUTFILE = 'data.json'
 
-wb = load_workbook(filename=FILEPATH)
+wb = load_workbook(filename=INPUTFILE)
 ws = wb.active
 my_list = []
 
@@ -21,10 +22,15 @@ for row in range(FIRST_ROW, last_row + 1):                      #Starte ab Zeile
         for column in range(FIRST_COLUMN, LAST_COLUM + 1):
             column_letter = get_column_letter(column)
             if row > FIRST_ROW and ws[column_letter + str(row)].value is not None :
-                my_dict[ws[column_letter + str(FIRST_ROW)].value] = ws[column_letter + str(row)].value
+                value = ws[column_letter + str(row)].value
+                if value == 'false' or value == 'False':
+                    value = False
+                if value == 'true' or value == 'True':
+                    value = True
+                my_dict[ws[column_letter + str(FIRST_ROW)].value] = value
         my_list.append(my_dict)
         index = index + 1
 
 data = json.dumps(my_list, sort_keys=False, indent=4, ensure_ascii=False)
-with open('data.json', 'w', encoding='utf-8') as f:
+with open(OUTPUTFILE, 'w', encoding='utf-8') as f:
     f.write(data)
