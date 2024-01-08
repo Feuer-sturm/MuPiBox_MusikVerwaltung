@@ -24,7 +24,7 @@ aus der Excel Tabelle die aktualisierte `data.json` Datei generieren, die dann w
 
 ## data.json aus dem Excel Dokument generieren
 - Sicherstellen, dass das Excel Dokument und Pythonskript im selben Ordner liegen
-- Wenn die Excel Datei umbenannt wurde, muss der Dateiname auch im Skript geändert werden (https://github.com/Feuer-sturm/MuPiBox_MusikVerwaltung/blob/515d3d6e02c7477e89f033842d04a717e37a0b9b/MuPiBox-MusikVerwaltung-xlsx2json.py#L5)
+- Wenn die Excel Datei umbenannt wurde, muss der Dateiname auch im Skript geändert werden (https://github.com/Feuer-sturm/MuPiBox_MusikVerwaltung/blob/a988f7b8d7183b2c2acdfb834b99b186f8e15006/MuPiBox-MusikVerwaltung-xlsx2json.py#L5)
 - Das Python Skript `MuPiBox-MusikVerwaltung-xlsx2json.py` ausführen (z.B. in VSCode im Terminal mit dem Befehl ```python .\MuPiBox-MusikVerwaltung-xlsx2json.py```)
 - `data.json` wird generiert
 - `data.json` via FTP oder Samba auf die Mupibox kopieren
