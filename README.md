@@ -37,6 +37,7 @@ aus der Excel Tabelle die aktualisierte `data.json` Datei generieren, die dann w
 - run `ftp mupibox` and enter the credentials (see https://mupibox.de/anleitungen/einstellungen/schnellzugriff-passwoerter/)
 - run `put data.json`
 - The file is transferred to the File Exchange folder of the MuPiBox
+- exit the ftp client with `quit`
 
 ## Änderungshistorie
 v1.0 (2024-01-05)
