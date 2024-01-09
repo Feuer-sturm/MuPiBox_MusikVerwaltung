@@ -32,13 +32,12 @@ aus der Excel Tabelle die aktualisierte `data.json` Datei generieren, die dann w
 - Auf der MuPiBox Oberfläche zwischen Musik/Hörbuch/Radio wechseln, so dass die `data.json` neu geladen wird. Notfalls die MuPiBox einmal neustarten.
 - Wenn ihr noch lokale Musik auf der Mupibox habt, dann müsst über die MuPiBox Admin Seite -> Reiter Admin -> Menü "Music database" das "Clean and update music database" noch einmal anstoßen, damit die lokale Musik wieder zur internen data.json hinzugefügt wird
 
-## How to transfer files via FTP on a Mac
-- open a terminal
-- switch to the folder where `data.json` is stored (usually the root folder of this repo)
-- run `ftp mupibox` and enter the credentials (see https://mupibox.de/anleitungen/einstellungen/schnellzugriff-passwoerter/)
-- run `put data.json`
-- The file is transferred to the File Exchange folder of the MuPiBox
-- exit the ftp client with `quit`
+## data.json via FTP vom Mac auf die MuPiBox übertragen
+- Terminal öffnen
+- in das Verzeichnis wechseln, in dem `data.json` liegt (normalerweise im root Verzeichnis von diesem repo)
+- `ftp mupibox` auf dem Terminal ausführen und die Logindaten für den FTP Server eingeben (siehe https://mupibox.de/anleitungen/einstellungen/schnellzugriff-passwoerter/)
+- `put data.json` auf dem Terminal ausführen, um `data.json` auf die MuPiBox zu kopieren
+- den FTP Client mit `quit` beenden
 
 ## Änderungshistorie
 v1.0 (2024-01-05)
