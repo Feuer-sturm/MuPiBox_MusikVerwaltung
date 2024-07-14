@@ -40,8 +40,13 @@ aus der Excel Tabelle die aktualisierte `data.json` Datei generieren, die dann w
 - den FTP Client mit `quit` beenden
 
 ## Änderungshistorie
-v1.0 (2024-01-05)
-- Initiale Version
+v1.2 (2024-07-14)
+- Attribute für Mupibox Version 4.0.4 angepasst, Template Excel Datei aktualisiert, Spaltenbezeichnung vereinheitlicht
 
 v1.1 (2024-01-07)
 - json2xlsx Converter hinzugefügt
+
+v1.0 (2024-01-05)
+- Initiale Version
+
+

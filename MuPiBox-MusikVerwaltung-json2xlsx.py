@@ -8,24 +8,24 @@ documentation = [
     'x = Eintrag wird in data.json hinzugefügt',
     '',
     '',
-    'Audibook und Music:',
-    'Audibook und Music:',
-    'Audibook und Music: Wert nur setzen, wenn aPartofAll = true ist',
-    'Audibook und Music: Wert nur setzen, wenn aPartofAll = true ist',
-    'Audibook und Music: Name für Album / Sammlung',
-    'Audibook und Music: Artistid aus Spotify eines Künstlers',
-    'Audibook: ID für Podcasts',
-    'Audibook und Music: Spotify Query Syntax',
-    'Audibook und Music: Attribut für "Menü Audibook und Music" -> "opt. Artist Cover"',
-    'Audibook und Music: In diesem Attribut muss die ID eingetragen werden, wenn es sich um eine Playlist handelt',
-    'Audibook und Music + Radio: AlbumID oder Stream Link',
-    'Radio: Attribut für "Menü Radio" -> "Title". Ist der Titel für den Stream',
-    'Radio: Attribut für "Menü Radio" -> "Cover Artwork URL"',
+    'nur bei category music + other nutzbar:',
+    'nur bei type spotify + rss nutzbar:',
+    'Wert nur setzen, wenn aPartofAll = true ist',
+    'Wert nur setzen, wenn aPartofAll = true ist',
+    'Name für Album / Sammlung (type = Spotify, Radio, RSS):',
+    'Album Cover',
+    'Label Cover',
+    'Spotify Query Syntax (type = spotify)',
+    'Spotify URL (type = spotify)',
+    'Artist ID aus Spotify URL, Artist ID NUR füllen wenn alles vom Artist geladen werden soll (type = spotify)',
+    'Playlist ID aus Spotify URL, type = spotify',
+    'ID für type = Radio + RSS + spotify (Album ID aus Spotify URL, ID ausfüllen, wenn es sich um ein einzelnes Album handelt)',
+    'Titel für Radio/Stream (type Radio/Stream)' ,
     'Interner Kommentar, welcher nicht in die data.json integriert wird',
     'Interner Kommentar, welcher nicht in die data.json integriert wird'
 ]
 labels = ['add to file', 'type', 'category', 'shuffle', 'aPartOfAll', 'aPartOfAllMin', 'aPartOfAllMax', 'artist',
-          'artistid', 'showid', 'query', 'artistcover', 'playlistid', 'id', 'title', 'cover', 'Kommentar', 'url']
+          'artistcover', 'cover', 'query', 'spotify_url', 'artistid', 'playlistid', 'id', 'title', 'Kommentar', 'url']
 
 wb = Workbook()
 ws = wb.active
